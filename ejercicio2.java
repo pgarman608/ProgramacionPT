@@ -38,7 +38,11 @@ public class ejercicio2{
     public static void espacear() {
         System.out.println("---------");
     }
-    public static int () {
-        
+    public static int potencia(int base, int exponente) {
+        int solucion= 1;
+        for (int i = 1; i<exponente;i++) {
+            solucion = solucion * base;
+        }
+        return solucion;
     }
 }

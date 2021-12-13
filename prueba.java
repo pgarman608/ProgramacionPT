@@ -1,15 +1,16 @@
+import java.util.*;
 public class prueba {
     public static void main(String[] args) {
         //Declaracion de variables
+        Scanner sc = new Scanner(System.in);
         int num1= 0;
         int num2= 0;
+        int sol = 0;
         //Solucion
-        num1 = (int)(Math.random()*((100-1+1)+1));
-        System.out.println(num1);
-        ejercicio2.espacear();
-        num2 = ejercicio2.voltear(num1);
-        System.out.println(num2);
-        ejercicio2.espacear();
-        boolean primo = ejercicio2.esPrimo(num1);
+        System.out.println("Introduceme la base");
+        num1 = sc.nextInt();
+        System.out.println("Introduceme el exponente");
+        num2 = sc.nextInt();
+        sol = ejercicio2.potencia(num1,num2);
     }
 }
